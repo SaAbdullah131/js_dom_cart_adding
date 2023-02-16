@@ -40,17 +40,17 @@
       </div>
    </header>
    <main>
-    <section class="lg:px-12">
-        <div class="product-details mt-6 w-[70%] bg-green-100 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section class="lg:px-12 flex flex-col md:flex-row mt-6">
+        <div class="product-details  w-[70%] bg-green-100 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="card card-compact w-full bg-base-100 shadow-xl">
                 <figure><img class="w-full h-40" src="./img/coffee.jpg" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title">Coffee</h2>
+                  <h2 class="card-title" id="first-name">Coffee</h2>
                   <p>Coffee you can choose whatever you Want? Please Make it for you</p>
-                  <p>Price: $<span>120</span></p>
-                  <p>Quantity: <span>5</span></p>
+                  <p>Price: $<span id="first-product-price">120</span></p>
+                  <p>Quantity: <span id="first-product-quantity">5</span></p>
                   <div class="card-actions justify-center">
-                    <button class="btn btn-primary rounded-full">Add to Cart</button>
+                    <button class="btn btn-primary rounded-full"id="first-card">Add to Cart</button>
                   </div>
                 </div>
             </div>
@@ -104,9 +104,28 @@
             </div>
         
         </div>
-
-        <div class="card-details">
-
+        <div class="card-details w-full md:w-[25%] lg:w-[30%] mx-auto bg-violet-100">
+            <h1 class="text-3xl text-center font-bold underline">Total Products: <span>0</span></h1>
+            <div class="overflow-x-auto">
+                <table class="table w-full">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>No</th>
+                      <th>Name</th>
+                      <th>Quantity</th>
+                      <th>Price</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-container">
+                  <!-- <tr>
+                    <th>1</th>
+                  </tr> -->
+                  </tbody>
+                </table>
+              </div>
         </div>
     </section>
    </main>
